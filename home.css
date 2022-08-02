@@ -1,0 +1,33 @@
+* {
+    background-color: black;
+    color: white;
+}
+
+#back {
+    background-color: white;
+    color: black;
+}
+
+#botao {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 30%;
+    width: 100px;
+    height: 100px;
+    right: 50px;
+    position: fixed;
+    z-index: 3;
+}
+
+.voltar {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 30%;
+    width: 100px;
+    height: 100px;
+    right: 50px;
+    position: fixed;
+    z-index: 3;
+}

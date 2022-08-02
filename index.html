@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="FrontEnd.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo" id="tituloDaPagina"> ALEXSANDER DANIEL</h1>
+        <ul class="ul">
+            <li><a href="login.html"><button id="login"></i>LOGIN</button></a></li>
+        </ul>
+    </header>
+    <div>
+        <a href="Desenhando_Animes.html">
+            <button class="botao" id="produto">
+                <h1>INFOPRODUTO</h1>
+            </button class="botao">
+        </a>
+    </div>
+    <br>
+    <div>
+        <a href="Campus ifnmg.html">
+            <button class="botao" id="tabela">
+                <h1>TABELAS</h1>
+            </button class="botao">
+        </a>
+    </div>
+    <br>
+    <div>
+        <a href="Music.html">
+            <button class="botao" id="musica">
+                <h1>MÚSICA</h1>
+            </button class="botao">
+        </a>
+    </div>
+    <br>
+    <div>
+        <a href="galeria de Fotos.html">
+            <button class="botao" id="galeria">
+                <h1>GALERIA DE FOTOS</h1>
+            </button class="botao">
+        </a>
+    </div>
+    <br>
+    <div>
+        <a href="index.html">
+            <button class="botao" id="grupo">
+                <h1>TRABALHO EM GRUPO</h1>
+            </button class="botao">
+        </a>
+    </div>
+    <br>
+    <script>
+        const titulo = document.getElementById('tituloDaPagina');
+
+        function movimento(a) {
+            const textoArray = a.innerHTML.split('');
+            a.innerHTML = '';
+            textoArray.forEach(function (l, i) {
+                setTimeout(() =>
+                    a.innerHTML += l, 200 * i)
+            });
+        }
+        movimento(titulo);
+    </script>
+</body>
+
+</html>

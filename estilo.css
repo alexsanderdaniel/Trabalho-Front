@@ -1,0 +1,113 @@
+:root {
+	--corFundo: black;
+	--corLetra: white;
+}
+
+#h1 {
+	color: var(--corLetra);
+}
+
+body {
+	margin: 0px;
+	background-color: var(--corFundo);
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+header {
+	height: 9.37em;
+	width: 99%;
+}
+
+main {
+	width: 90%;
+	margin: 0 auto 0;
+
+	display: block;
+}
+
+.linha {
+	width: 100%;
+}
+
+.coluna1,
+.coluna2,
+.coluna3 {
+	display: table-cell;
+	width: 32%;
+	margin: 5px;
+	vertical-align: middle;
+}
+
+#fechar,
+#voltar,
+#proxima {
+	cursor: pointer;
+}
+
+.im {
+	display: none;
+	color: var(--corLetra);
+
+}
+
+figure:hover .im {
+	display: block;
+}
+
+figure img {
+	width: 18.75em;
+	cursor: pointer;
+}
+
+#zoom {
+	background-color: black;
+	display: none;
+	width: 56.25em;
+	height: 37.5em;
+	border: 3px solid black;
+	position: fixed;
+	top: 2em;
+	left: 20%;
+
+}
+
+#zoom img {
+	display: inline-block;
+}
+
+#zoom .voltar .proxima {
+	height: 37.5em;
+	width: 3.75em;
+
+}
+
+#zoom #imggrande {
+	width: 37.5em;
+	margin-left: 2em;
+
+}
+
+#voltar {
+	position: absolute;
+	top: 18.75em;
+	left: 0px;
+	width: 2.5em;
+}
+
+#proxima {
+	position: absolute;
+	top: 18.75em;
+	right: 0px;
+	width: 2.5em;
+}
+
+#fechar {
+	position: absolute;
+	top: 15px;
+	right: 50%;
+	width: 2.5em;
+}

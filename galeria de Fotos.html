@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="galeria de Fotos.css">
+	<title>Galeria de Fotos</title>
+</head>
+
+<body>
+	<header>
+		<h1 id="h1">GALERIA DE FOTOS</h1>
+		<a href="index.html">
+			<button id="botao">
+				<h2 id="back">HOME</h2>
+			</button>
+		</a>
+	</header>
+	<main>
+		<div class="linha">
+			<div class="coluna1">
+				<figure onclick="imagemgrande('1');">
+					<img src="imagem1.jpg">
+					<figcaption class="im">Imagem 01</figcaption>
+				</figure>
+			</div>
+			<div class="coluna2">
+				<figure onclick="imagemgrande('2');">
+					<img src="imagem2.jpg">
+					<figcaption class="im">Imagem 02</figcaption>
+				</figure>
+			</div>
+			<div class="coluna3">
+				<figure onclick="imagemgrande('3');">
+					<img src="imagem3.jpg">
+					<figcaption class="im">Imagem 03</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="linha">
+			<div class="coluna1">
+				<figure onclick="imagemgrande('4');">
+					<img src="imagem4.jpg">
+					<figcaption class="im">Imagem 04</figcaption>
+				</figure>
+			</div>
+			<div class="coluna2">
+				<figure onclick="imagemgrande('5');">
+					<img src="imagem5.jpg">
+					<figcaption class="im">Imagem 05</figcaption>
+				</figure>
+			</div>
+			<div class="coluna3">
+				<figure onclick="imagemgrande('6');">
+					<img src="imagem6.jpg">
+					<figcaption class="im">Imagem 06</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="linha">
+			<div class="coluna1">
+				<figure onclick="imagemgrande('7');">
+					<img src="imagem7.jpg">
+					<figcaption class="im">Imagem 07</figcaption>
+				</figure>
+			</div>
+			<div class="coluna2">
+				<figure onclick="imagemgrande('8');">
+					<img src="imagem8.jpg">
+					<figcaption class="im">Imagem 08</figcaption>
+				</figure>
+			</div>
+			<div class="coluna3">
+				<figure onclick="imagemgrande('9');">
+					<img src="imagem9.jpg">
+					<figcaption class="im">Imagem 09</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="linha">
+			<div class="coluna1">
+				<figure onclick="imagemgrande('10');">
+					<img src="imagem10.jpg">
+					<figcaption class="im">Imagem 10</figcaption>
+				</figure>
+			</div>
+			<div class="coluna2">
+				<figure onclick="imagemgrande('11');">
+					<img src="imagem11.jpg">
+					<figcaption class="im">Imagem 11</figcaption>
+				</figure>
+			</div>
+			<div class="coluna3">
+				<figure onclick="imagemgrande('12');">
+					<img src="imagem12.jpg">
+					<figcaption class="im">Imagem 12</figcaption>
+				</figure>
+			</div>
+
+		</div>
+		<div class="linha">
+			<div class="coluna1">
+				<figure onclick="imagemgrande('13');">
+					<img src="imagem13.jpg">
+					<figcaption class="im">Imagem 13</figcaption>
+				</figure>
+			</div>
+			<div class="coluna2">
+				<figure onclick="imagemgrande('14');">
+					<img src="imagem14.jpg">
+					<figcaption class="im">Imagem 14</figcaption>
+				</figure>
+			</div>
+			<div class="coluna3">
+				<figure onclick="imagemgrande('15');">
+					<img src="imagem15.jpg">
+					<figcaption class="im">Imagem 15</figcaption>
+				</figure>
+			</div>
+		</div>
+	</main>
+	<section id="zoom">
+		<img id="fechar" src="fechar.png" onclick="fechar();">
+
+		<img id="voltar" src="anterior.jpg" onclick="imagemgrande(parseInt(idimagem)-1);">
+
+		<figure>
+			<img id="imggrande" src="imagem15.jpg">
+			<figcaption id="caption">Imagem 15</figcaption>
+		</figure>
+		<img id="proxima" src="proximo.jpg" onclick="imagemgrande(parseInt(idimagem)+1);">
+	</section>g
+
+
+	<script>
+		var idimagem;
+		function imagemgrande(imagem) {
+			//alert(idimagem);
+			idimagem = imagem;
+			img = "imagem" + imagem + ".jpg";
+			legenda = "Imagem " + imagem;
+			document.getElementById("imggrande").src = img;
+			document.getElementById("caption").innerHTML = legenda;
+			document.getElementById('zoom').style.display = "block";
+
+		}
+		function a() {
+
+		}
+		function fechar() {
+			document.getElementById('zoom').style.display = "none";
+		}
+
+	</script>
+</body>
+
+</html>

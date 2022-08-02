@@ -1,0 +1,86 @@
+:root {
+	--Preto: black;
+	--Branco: white;
+	--Azul: blue;
+}
+
+
+body {
+	margin: 0px;
+	background-color: var(--Preto);
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	height: 200px;
+	background-color: var(--Azul);
+	grid-area: h;
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+
+header ul li {
+	display: inline-block;
+	list-style: none;
+}
+
+header .ul {
+	color: var(--Branco);
+	position: absolute;
+	width: 60px;
+	height: 35px;
+	right: 20px;
+	top: 29px;
+}
+
+#login {
+	left: 50px;
+	height: 50px;
+	background: var(--Branco);
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+header .titulo {
+	color: var(--Branco);
+	text-shadow: 1px;
+	font-size: 80px;
+	font-family: 'Amatic SC', 'cursive';
+	text-transform: uppercase;
+	text-align: center;
+	height: 150px;
+}
+
+.botao {
+	width: 250px;
+	height: 100px;
+	background: var(--Branco);
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+#produto {
+	position: absolute;
+	left: 50px;
+	top: 200px;
+}
+
+#tabela {
+	position: absolute;
+	right: 50px;
+	top: 400px;
+}
+
+#musica {
+	position: absolute;
+	left: 50px;
+	top: 600px;
+}
+
+#galeria {
+	position: absolute;
+	right: 50px;
+	top: 800px;
+}
